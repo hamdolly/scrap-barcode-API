@@ -371,4 +371,4 @@ app.get('/section/description/:text', async (req, res) => {
 
 
 
-app.listen(4432, () => console.log("Started a port 4432"))
+app.listen(4432 || process.env.PORT, () => console.log("Started a port 4432"))
